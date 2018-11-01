@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Login from './LoginForm/LoginForm';
 
 const Home = props => (
   <div>
+    <Login></Login>
     <h1>Hello, world!</h1>
     <p>Welcome to your new single-page application, built with:</p>
     <ul>
@@ -20,4 +22,5 @@ const Home = props => (
   </div>
 );
 
+//export default Home;
 export default connect()(Home);
